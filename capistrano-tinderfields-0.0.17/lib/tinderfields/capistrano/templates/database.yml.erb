@@ -1,0 +1,6 @@
+<%= stage %>:
+  adapter: <%= Capistrano::CLI.ui.ask("Enter #{stage} database adapter: ") %>
+  database: <%= Capistrano::CLI.ui.ask("Enter #{stage} database name: ") %>
+  username: <%= Capistrano::CLI.ui.ask("Enter #{stage} database username: ") %>
+  password: <%= Capistrano::CLI.ui.ask("Enter #{stage} database password: ") %>
+  host: localhost

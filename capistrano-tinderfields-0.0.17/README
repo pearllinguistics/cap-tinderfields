@@ -1,0 +1,5 @@
+# To update this gem, first make your changes, then commit, then:
+rake version:bump:patch
+rake release
+rake build
+fury push pkg/capistrano-tinderfields-0.0.8.gem
